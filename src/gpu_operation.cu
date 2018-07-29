@@ -38,7 +38,7 @@ GpuOperation::~GpuOperation() {
   cudaFree(v2_);
 }
 
-const void GpuOperation::print() const {
+void GpuOperation::print() const {
   std::cerr << "Print:" << std::endl;
   for(size_t i = 0; i < size_; ++i) {
     std::cerr << v1_[i] << "  " << v2_[i] << std::endl;

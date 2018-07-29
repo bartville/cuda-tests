@@ -14,7 +14,7 @@ namespace cuda_test {
     void subtract();
     void multiply();
 
-    const void print() const;
+    void print() const;
     
   private:
     float* v1_;
